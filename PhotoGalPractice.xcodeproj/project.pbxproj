@@ -12,6 +12,7 @@
 		CD9DED8B1CDC172900868BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9DED891CDC172900868BE5 /* Main.storyboard */; };
 		CD9DED8D1CDC172900868BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9DED8C1CDC172900868BE5 /* Assets.xcassets */; };
 		CD9DED901CDC172900868BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9DED8E1CDC172900868BE5 /* LaunchScreen.storyboard */; };
+		CD9DED981CDC19D000868BE5 /* PhotoTakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9DED971CDC19D000868BE5 /* PhotoTakerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CD9DED8C1CDC172900868BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD9DED8F1CDC172900868BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD9DED911CDC172900868BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9DED971CDC19D000868BE5 /* PhotoTakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				CD9DED851CDC172900868BE5 /* AppDelegate.swift */,
 				CD9DED871CDC172900868BE5 /* ViewController.swift */,
 				CD9DED891CDC172900868BE5 /* Main.storyboard */,
+				CD9DED971CDC19D000868BE5 /* PhotoTakerViewController.swift */,
 				CD9DED8C1CDC172900868BE5 /* Assets.xcassets */,
 				CD9DED8E1CDC172900868BE5 /* LaunchScreen.storyboard */,
 				CD9DED911CDC172900868BE5 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9DED981CDC19D000868BE5 /* PhotoTakerViewController.swift in Sources */,
 				CD9DED881CDC172900868BE5 /* ViewController.swift in Sources */,
 				CD9DED861CDC172900868BE5 /* AppDelegate.swift in Sources */,
 			);

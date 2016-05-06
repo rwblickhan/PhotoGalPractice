@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hXH-WC-Rl6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Photo Taker View Controller-->
+        <scene sceneID="bLo-uS-6rr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Photo Taker View Controller" id="hXH-WC-Rl6" customClass="PhotoTakerViewController" customModule="PhotoGalPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5lQ-Xj-cJa"/>
+                        <viewControllerLayoutGuide type="bottom" id="EKq-rY-bKL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="vaM-Qk-ZOC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KlA-Yy-lJ1">
+                                <rect key="frame" x="0.0" y="20" width="600" height="448"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" id="7w3-U5-ZMW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwN-cE-7zo">
+                                <rect key="frame" x="244" y="550" width="112" height="30"/>
+                                <state key="normal" title="Take New Photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="hXH-WC-Rl6" eventType="touchUpInside" id="mgl-fK-QOd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nwN-cE-7zo" secondAttribute="bottom" constant="20" symbolic="YES" id="2TN-hg-EFm"/>
+                            <constraint firstAttribute="trailing" secondItem="KlA-Yy-lJ1" secondAttribute="trailing" id="Hsc-Xj-QIF"/>
+                            <constraint firstItem="KlA-Yy-lJ1" firstAttribute="leading" secondItem="vaM-Qk-ZOC" secondAttribute="leading" id="Nyu-wh-haf"/>
+                            <constraint firstItem="KlA-Yy-lJ1" firstAttribute="top" secondItem="5lQ-Xj-cJa" secondAttribute="bottom" id="Vih-eO-v3n"/>
+                            <constraint firstItem="nwN-cE-7zo" firstAttribute="centerX" secondItem="KlA-Yy-lJ1" secondAttribute="centerX" id="dh9-fI-Y06"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="nwN-cE-7zo" id="Yq3-wS-7hH"/>
+                        <outlet property="imageView" destination="KlA-Yy-lJ1" id="gCE-gj-v1F"/>
+                        <outlet property="photoTakerButton" destination="nwN-cE-7zo" id="TQW-fQ-7Lr"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ua-Yz-en9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1251" y="558"/>
         </scene>
     </scenes>
 </document>
